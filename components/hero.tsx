@@ -4,7 +4,7 @@ import { Mail } from "lucide-react";
 export function Hero() {
   return (
     <section className="relative w-full pt-4 md:pt-12 mb-16">
-      <div className="max-w-5xl mx-auto px-6">
+      <div className="w-full px-6">
         {/* Cover Image */}
         <div className="w-full h-48 md:h-64 bg-gradient-to-b from-neutral-800 to-black rounded-lg opacity-80 animate-in fade-in zoom-in duration-700 border-b border-white/5"></div>
 
@@ -20,10 +20,10 @@ export function Hero() {
           {/* Editorial Text & Socials */}
           <div className="w-full flex justify-between items-end mt-6">
             <div>
-              <h1 className="text-5xl md:text-7xl text-white font-serif leading-none tracking-tight">
+              <h1 className="text-4xl md:text-6xl text-white font-serif leading-none tracking-tight">
                 Piyush Kumar
               </h1>
-              <p className="text-[#888888] text-lg md:text-xl mt-2 font-sans font-light">
+              <p className="text-[#888888] text-base md:text-lg mt-2 font-sans font-light">
                 Full Stack Engineer
               </p>
             </div>

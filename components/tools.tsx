@@ -29,9 +29,9 @@ export function Tools() {
 
   return (
     <section className="py-8">
-      <div className="max-w-5xl mx-auto px-6">
-        <h2 className="text-xl font-mono text-[#444444] mb-8 uppercase tracking-widest">
-          Stack
+      <div className="w-full px-6">
+        <h2 className="text-lg font-mono text-[#444444] mb-8 uppercase tracking-widest">
+          Tools I Use
         </h2>
 
         <div className="relative">
@@ -46,7 +46,7 @@ export function Tools() {
                 {tools.slice(0, Math.ceil(tools.length / 2)).map((tool) => (
                   <span
                     key={tool.name}
-                    className="flex items-center gap-2 px-6 py-3 rounded-xl border border-[#222222] bg-[#0a0a0a] text-[#888888] text-base hover:border-[#444444] hover:text-[var(--hover-color)] transition-all cursor-default min-w-max"
+                    className="flex items-center gap-2 px-6 py-3 rounded-xl border border-[#222222] bg-[#0a0a0a] text-[#888888] text-sm hover:border-[#444444] hover:text-[var(--hover-color)] transition-all cursor-default min-w-max"
                     style={{ "--hover-color": tool.color } as React.CSSProperties}
                   >
                     <tool.icon className="w-5 h-5" />
@@ -64,7 +64,7 @@ export function Tools() {
                 {tools.slice(Math.ceil(tools.length / 2)).map((tool) => (
                   <span
                     key={tool.name}
-                    className="flex items-center gap-2 px-6 py-3 rounded-xl border border-[#222222] bg-[#0a0a0a] text-[#888888] text-base hover:border-[#444444] hover:text-[var(--hover-color)] transition-all cursor-default min-w-max"
+                    className="flex items-center gap-2 px-6 py-3 rounded-xl border border-[#222222] bg-[#0a0a0a] text-[#888888] text-sm hover:border-[#444444] hover:text-[var(--hover-color)] transition-all cursor-default min-w-max"
                     style={{ "--hover-color": tool.color } as React.CSSProperties}
                   >
                     <tool.icon className="w-5 h-5" />

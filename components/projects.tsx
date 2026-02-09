@@ -25,8 +25,8 @@ export function Projects() {
 
   return (
     <section id="projects" className="py-8">
-      <div className="max-w-5xl mx-auto px-6">
-        <h2 className="text-xl font-mono text-[#444444] mb-8 uppercase tracking-widest">
+      <div className="w-full px-6">
+        <h2 className="text-lg font-mono text-[#444444] mb-8 uppercase tracking-widest">
           Selected Work
         </h2>
 
@@ -39,17 +39,17 @@ export function Projects() {
               className="group block p-8 border border-[#111111] hover:border-[#333333] hover:bg-[#0a0a0a] transition-all bg-[#050505]"
             >
               <div className="flex justify-between items-start mb-6">
-                <h3 className="text-3xl text-white font-serif group-hover:text-white transition-colors">
+                <h3 className="text-2xl text-white font-serif group-hover:text-white transition-colors">
                   {project.name}
                 </h3>
                 <ArrowUpRight size={20} className="text-[#444444] group-hover:text-white transition-colors opacity-0 group-hover:opacity-100" />
               </div>
 
-              <p className="text-[#888888] text-base leading-relaxed mb-8 group-hover:text-[#aaaaaa]">
+              <p className="text-[#888888] text-sm leading-relaxed mb-8 group-hover:text-[#aaaaaa]">
                 {project.description}
               </p>
 
-              <div className="text-sm font-mono text-[#444444] group-hover:text-[#666666]">
+              <div className="text-xs font-mono text-[#444444] group-hover:text-[#666666]">
                 {project.tech}
               </div>
             </Link>
