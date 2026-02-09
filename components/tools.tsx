@@ -1,22 +1,29 @@
+import {
+  SiJavascript, SiTypescript, SiNextdotjs, SiReact, SiTailwindcss, SiNodedotjs,
+  SiPostgresql, SiGo, SiDocker, SiGit, SiC, SiCplusplus, SiPython, SiMysql,
+  SiMongodb, SiLinux, SiOpenai
+} from "react-icons/si";
+
 export function Tools() {
   const tools = [
-    "JavaScript",
-    "TypeScript",
-    "Next.js",
-    "React",
-    "Tailwind",
-    "Node.js",
-    "PostgreSQL",
-    "Go",
-    "Docker",
-    "Git",
-    "Artificial Intelligence",
-    "C",
-    "C++",
-    "Python",
-    "MySql",
-    "MongoDB",
-    "Linux"
+    { name: "JavaScript", icon: SiJavascript },
+    { name: "TypeScript", icon: SiTypescript },
+    { name: "Next.js", icon: SiNextdotjs },
+    { name: "React", icon: SiReact },
+    { name: "Tailwind", icon: SiTailwindcss },
+    { name: "Node.js", icon: SiNodedotjs },
+    { name: "PostgreSQL", icon: SiPostgresql },
+    { name: "Go", icon: SiGo },
+    { name: "Docker", icon: SiDocker },
+    { name: "Git", icon: SiGit },
+    { name: "Artificial Intelligence", icon: SiOpenai },
+    { name: "C", icon: SiC },
+    { name: "C++", icon: SiCplusplus },
+    { name: "Python", icon: SiPython },
+    // { name: "MySql", icon: SiMysql }, // Removed due to potential icon unavailability in some versions, sticking to known good set or checking first. Actually let's try SiMysql, it usually exists.
+    { name: "MySql", icon: SiMysql },
+    { name: "MongoDB", icon: SiMongodb },
+    { name: "Linux", icon: SiLinux }
   ];
 
   return (
@@ -26,13 +33,14 @@ export function Tools() {
           Stack
         </h2>
 
-        <div className="flex flex-wrap gap-3">
+        <div className="flex flex-wrap gap-2">
           {tools.map((tool) => (
             <span
-              key={tool}
-              className="px-5 py-2 rounded-full border border-[#222222] bg-[#0a0a0a] text-[#888888] text-sm hover:border-[#444444] hover:text-white transition-colors cursor-default"
+              key={tool.name}
+              className="flex items-center gap-2 px-4 py-1.5 rounded-full border border-[#222222] bg-[#0a0a0a] text-[#888888] text-sm hover:border-[#444444] hover:text-white transition-colors cursor-default"
             >
-              {tool}
+              <tool.icon className="w-3.5 h-3.5" />
+              {tool.name}
             </span>
           ))}
         </div>

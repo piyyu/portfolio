@@ -1,14 +1,50 @@
+import { SiGithub, SiLinkedin, SiX } from "react-icons/si";
+import { Mail } from "lucide-react";
+
 export function Hero() {
   return (
-    <section className="flex items-center justify-center py-8">
-      <div className="flex flex-col items-center max-w-5xl w-full px-6 text-center">
+    <section className="relative w-full pt-4 md:pt-12 mb-16">
+      <div className="max-w-5xl mx-auto px-6">
+        {/* Cover Image */}
+        <div className="w-full h-48 md:h-64 bg-gradient-to-r from-pink-500 via-red-500 to-yellow-500 rounded-lg opacity-80 animate-in fade-in zoom-in duration-700"></div>
 
-        <div className="space-y-4">
-          <h1 className="text-5xl md:text-7xl text-white font-serif leading-tight">
-            Piyush Kumar
-          </h1>
+        {/* Content Container (Avatar + Text) */}
+        <div className="flex flex-col items-start -mt-12 md:-mt-16 ml-4 relative z-10">
+          {/* Avatar (PFP) */}
+          <img
+            src="https://github.com/piyyu.png"
+            alt="Piyush Kumar"
+            className="w-32 h-32 md:w-40 md:h-40 rounded-full border-4 border-black shadow-2xl"
+          />
+
+          {/* Editorial Text & Socials */}
+          <div className="w-full flex justify-between items-end mt-4">
+            <div>
+              <h1 className="text-3xl md:text-5xl text-white font-bold leading-tight">
+                Piyush Kumar
+              </h1>
+              <p className="text-[#888888] text-sm md:text-base mt-1">
+                Full Stack Engineer
+              </p>
+            </div>
+
+            {/* Social Icons */}
+            <div className="flex gap-3 mb-2">
+              <a href="https://github.com/piyyu" target="_blank" className="p-2 rounded-full bg-white/5 border border-white/10 text-[#888888] hover:text-white hover:bg-white/10 transition-all">
+                <SiGithub className="w-5 h-5" />
+              </a>
+              <a href="https://linkedin.com/in/piyush446" target="_blank" className="p-2 rounded-full bg-white/5 border border-white/10 text-[#888888] hover:text-white hover:bg-white/10 transition-all">
+                <SiLinkedin className="w-5 h-5" />
+              </a>
+              <a href="https://x.com/piyyu" target="_blank" className="p-2 rounded-full bg-white/5 border border-white/10 text-[#888888] hover:text-white hover:bg-white/10 transition-all">
+                <SiX className="w-5 h-5" />
+              </a>
+              <a href="mailto:piyushkr446@gmail.com" className="p-2 rounded-full bg-white/5 border border-white/10 text-[#888888] hover:text-white hover:bg-white/10 transition-all">
+                <Mail className="w-5 h-5" />
+              </a>
+            </div>
+          </div>
         </div>
-
       </div>
     </section>
   );
