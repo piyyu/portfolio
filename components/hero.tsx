@@ -30,16 +30,16 @@ export function Hero() {
 
             {/* Social Icons */}
             <div className="flex gap-3 mb-2">
-              <a href="https://github.com/piyyu" target="_blank" className="p-2 rounded-full bg-white/5 border border-white/10 text-[#888888] hover:text-white hover:bg-white/10 transition-all">
+              <a href="https://github.com/piyyu" target="_blank" className="group relative p-3 rounded-full bg-[#222] border border-[#333] border-b-4 border-b-[#111] text-[#888] hover:text-white hover:bg-[#2a2a2a] hover:border-b-[#111] active:border-b-0 active:translate-y-1 transition-all duration-100">
                 <SiGithub className="w-5 h-5" />
               </a>
-              <a href="https://linkedin.com/in/piyush446" target="_blank" className="p-2 rounded-full bg-white/5 border border-white/10 text-[#888888] hover:text-[#0077b5] hover:bg-white/10 transition-all">
+              <a href="https://linkedin.com/in/piyush446" target="_blank" className="group relative p-3 rounded-full bg-[#222] border border-[#333] border-b-4 border-b-[#111] text-[#888] hover:text-[#0077b5] hover:bg-[#2a2a2a] hover:border-b-[#111] active:border-b-0 active:translate-y-1 transition-all duration-100">
                 <SiLinkedin className="w-5 h-5" />
               </a>
-              <a href="https://x.com/piyyu" target="_blank" className="p-2 rounded-full bg-white/5 border border-white/10 text-[#888888] hover:text-[#1DA1F2] hover:bg-white/10 transition-all">
+              <a href="https://x.com/piyyu" target="_blank" className="group relative p-3 rounded-full bg-[#222] border border-[#333] border-b-4 border-b-[#111] text-[#888] hover:text-[#1DA1F2] hover:bg-[#2a2a2a] hover:border-b-[#111] active:border-b-0 active:translate-y-1 transition-all duration-100">
                 <SiX className="w-5 h-5" />
               </a>
-              <a href="mailto:piyushkr446@gmail.com" className="p-2 rounded-full bg-white/5 border border-white/10 text-[#888888] hover:text-[#EA4335] hover:bg-white/10 transition-all">
+              <a href="mailto:piyushkr446@gmail.com" className="group relative p-3 rounded-full bg-[#222] border border-[#333] border-b-4 border-b-[#111] text-[#888] hover:text-[#EA4335] hover:bg-[#2a2a2a] hover:border-b-[#111] active:border-b-0 active:translate-y-1 transition-all duration-100">
                 <Mail className="w-5 h-5" />
               </a>
             </div>

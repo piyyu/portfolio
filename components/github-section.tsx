@@ -10,16 +10,13 @@ export function GithubSection() {
           Code Activity
         </h2>
 
-        <div className="flex justify-center grayscale opacity-80 hover:opacity-100 transition-opacity">
+        <div className="flex justify-center grayscale hover:grayscale-0 opacity-80 hover:opacity-100 transition-all duration-500">
           <GitHubCalendar
             username="piyyu"
             colorScheme="dark"
             blockSize={12}
             blockMargin={4}
             fontSize={10}
-            theme={{
-              dark: ["#161616", "#333333", "#555555", "#888888", "#ededed"],
-            }}
           />
         </div>
       </div>

@@ -46,7 +46,7 @@ export function Tools() {
                 {tools.slice(0, Math.ceil(tools.length / 2)).map((tool) => (
                   <span
                     key={tool.name}
-                    className="flex items-center gap-2 px-6 py-3 rounded-xl border border-[#222222] bg-[#0a0a0a] text-[#888888] text-sm hover:border-[#444444] hover:text-[var(--hover-color)] transition-all cursor-default min-w-max"
+                    className="group relative flex items-center gap-2 px-6 py-3 rounded-xl bg-[#222] border border-[#333] border-b-4 border-b-[#111] text-[#888] text-sm hover:text-[var(--hover-color)] hover:bg-[#2a2a2a] hover:border-b-[#111] active:border-b-0 active:translate-y-1 transition-all duration-100 cursor-default min-w-max"
                     style={{ "--hover-color": tool.color } as React.CSSProperties}
                   >
                     <tool.icon className="w-5 h-5" />
@@ -64,7 +64,7 @@ export function Tools() {
                 {tools.slice(Math.ceil(tools.length / 2)).map((tool) => (
                   <span
                     key={tool.name}
-                    className="flex items-center gap-2 px-6 py-3 rounded-xl border border-[#222222] bg-[#0a0a0a] text-[#888888] text-sm hover:border-[#444444] hover:text-[var(--hover-color)] transition-all cursor-default min-w-max"
+                    className="group relative flex items-center gap-2 px-6 py-3 rounded-xl bg-[#222] border border-[#333] border-b-4 border-b-[#111] text-[#888] text-sm hover:text-[var(--hover-color)] hover:bg-[#2a2a2a] hover:border-b-[#111] active:border-b-0 active:translate-y-1 transition-all duration-100 cursor-default min-w-max"
                     style={{ "--hover-color": tool.color } as React.CSSProperties}
                   >
                     <tool.icon className="w-5 h-5" />
