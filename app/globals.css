@@ -1,10 +1,17 @@
 @import "tailwindcss";
 
 @theme {
-  --font-sans: var(--font-geist-sans);
-  --font-serif: var(--font-libre-baskerville);
+  --font-sans: var(--font-inter-tight);
+  --font-serif: var(--font-instrument-serif);
+  --font-mono: var(--font-jetbrains-mono);
 }
 
+html {
+  --font-sans: var(--font-inter-tight);
+  --font-serif: var(--font-instrument-serif);
+  --font-mono: var(--font-jetbrains-mono);
+  --font-heading: var(--font-instrument-serif);
+}
 
 :root {
   /* Enforce dark mode by default */
@@ -15,10 +22,6 @@
   --muted: #888888;
   --muted-dark: #333333;
   --border: #262626;
-
-  /* Typography basics */
-  --font-serif: var(--font-libre-baskerville);
-  --font-sans: var(--font-geist-sans);
 }
 
 body {
@@ -35,7 +38,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: var(--font-serif), Georgia, serif;
+  font-family: var(--font-heading), Georgia, serif;
   font-weight: 400;
   /* Editorial style usually lighter weights */
   letter-spacing: -0.02em;

@@ -1,22 +1,22 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono, Libre_Baskerville } from "next/font/google";
+import { Inter_Tight, Instrument_Serif, JetBrains_Mono } from "next/font/google";
 import "./globals.css";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
+const interTight = Inter_Tight({
+  variable: "--font-inter-tight",
   subsets: ["latin"],
 });
 
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
+const instrumentSerif = Instrument_Serif({
+  weight: "400",
+  style: ["normal", "italic"],
+  variable: "--font-instrument-serif",
   subsets: ["latin"],
 });
 
-const libreBaskerville = Libre_Baskerville({
-  weight: ["400", "700"],
-  variable: "--font-libre-baskerville",
+const jetbrainsMono = JetBrains_Mono({
+  variable: "--font-jetbrains-mono",
   subsets: ["latin"],
-  display: "swap",
 });
 
 export const metadata: Metadata = {
@@ -30,9 +30,9 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className="dark">
+    <html lang="en" className={`dark ${interTight.variable} ${instrumentSerif.variable} ${jetbrainsMono.variable}`}>
       <body
-        className={`${geistSans.variable} ${geistMono.variable} ${libreBaskerville.variable} antialiased bg-black text-white`}
+        className="antialiased bg-black text-white"
       >
         {children}
       </body>

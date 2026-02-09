@@ -4,9 +4,9 @@ import { GitHubCalendar } from "react-github-calendar";
 
 export function GithubSection() {
   return (
-    <section className="py-8 border-t border-[#111111]">
+    <section className="py-8">
       <div className="max-w-5xl mx-auto px-6">
-        <h2 className="text-sm font-mono text-[#444444] mb-6 uppercase tracking-widest">
+        <h2 className="text-xl font-mono text-[#444444] mb-8 uppercase tracking-widest">
           Code Activity
         </h2>
 
