@@ -24,10 +24,10 @@ export function Projects() {
   ];
 
   return (
-    <section id="projects" className="py-8">
+    <section id="projects" className="py-4">
       <div className="w-full px-6">
         <h2 className="text-lg font-mono text-[#444444] mb-8 uppercase tracking-widest">
-          Selected Work
+          Proof of Work
         </h2>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">

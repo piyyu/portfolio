@@ -1,13 +1,13 @@
 @import "tailwindcss";
 
 @theme {
-  --font-sans: var(--font-inter-tight);
+  --font-sans: var(--font-poppins);
   --font-serif: var(--font-instrument-serif);
   --font-mono: var(--font-jetbrains-mono);
 }
 
 html {
-  --font-sans: var(--font-inter-tight);
+  --font-sans: var(--font-poppins);
   --font-serif: var(--font-instrument-serif);
   --font-mono: var(--font-jetbrains-mono);
   --font-heading: var(--font-instrument-serif);

@@ -28,7 +28,7 @@ export function Tools() {
   ];
 
   return (
-    <section className="py-8">
+    <section className="py-4">
       <div className="w-full px-6">
         <h2 className="text-lg font-mono text-[#444444] mb-8 uppercase tracking-widest">
           Tools I Use
