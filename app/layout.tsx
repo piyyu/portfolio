@@ -21,7 +21,7 @@ const jetbrainsMono = JetBrains_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Piyush Kumar | Full Stack Engineer",
+  title: "Piyush Kumar",
   description: "Developer portfolio of Piyush Kumar. Full-stack engineering, systems thinking, and AI.",
 };
 

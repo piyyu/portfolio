@@ -1,24 +1,27 @@
 "use client";
 
 import { GitHubCalendar } from "react-github-calendar";
+import { Github } from "lucide-react";
 
 export function GithubSection() {
   return (
-    <section className="py-4">
-      <div className="w-full px-6">
-        <h2 className="text-lg font-mono text-[#444444] mb-8 uppercase tracking-widest">
-          GitHub Activity
-        </h2>
+    <section className="py-12 border-t border-[#1a1a1a]">
+      <h2 className="text-sm font-mono text-[#888888] mb-8 uppercase tracking-[0.2em] flex items-center gap-2">
+        <Github className="w-4 h-4" />
+        GitHub Activity
+      </h2>
 
-        <div className="flex justify-center grayscale hover:grayscale-0 opacity-80 hover:opacity-100 transition-all duration-500">
-          <GitHubCalendar
-            username="piyyu"
-            colorScheme="dark"
-            blockSize={12}
-            blockMargin={4}
-            fontSize={10}
-          />
-        </div>
+      <div className="w-full flex justify-center opacity-80 hover:opacity-100 transition-opacity duration-300">
+        <GitHubCalendar
+          username="piyyu"
+          colorScheme="dark"
+          theme={{
+            dark: ['#1a1a1a', '#333333', '#555555', '#888888', '#ededed'],
+          }}
+          blockSize={10}
+          blockMargin={4}
+          fontSize={10}
+        />
       </div>
     </section>
   );
