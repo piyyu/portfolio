@@ -21,12 +21,15 @@ export function GithubSection() {
         GitHub Activity
       </h2>
 
-      <div className="w-full flex justify-center opacity-80 hover:opacity-100 transition-opacity duration-300 min-h-[150px] mt-4 overflow-x-auto">
+      <div className="w-full flex justify-center opacity-80 hover:opacity-100 transition-opacity duration-300 mt-4">
         <div className="w-full max-w-[800px] flex justify-center [&_article]:w-full [&_article]:max-w-full [&_svg]:w-full [&_svg]:max-w-full [&_svg]:h-auto">
           {mounted && (
             <GitHubCalendar
               username="piyyu"
               colorScheme={resolvedTheme === "dark" ? "dark" : "light"}
+              blockSize={12}
+              blockMargin={2}
+              fontSize={12}
               theme={{
                 light: ['#f0f0f0', '#d0d0d0', '#a0a0a0', '#707070', '#404040'],
                 dark: ['#1a1a1a', '#333333', '#555555', '#888888', '#ededed'],

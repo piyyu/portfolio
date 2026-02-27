@@ -72,20 +72,7 @@ h6 {
   color: var(--muted);
 }
 
-/* Override react-activity-calendar sizing and color to fit strictly in max-w-3xl */
-.react-activity-calendar {
-  width: 100% !important;
-  max-width: 100% !important;
-  overflow: hidden !important;
-}
-
-.react-activity-calendar svg {
-  width: 100% !important;
-  height: auto !important;
-  max-width: 700px !important;
-  display: block;
-  margin: 0 auto;
-}
+/* Removed rigid react-activity-calendar bounds to allow bigger cells */
 
 .glass-panel {
   background: rgba(var(--background), 0.03);
