@@ -7,7 +7,7 @@ import { Footer } from "@/components/footer";
 
 export default function Home() {
   return (
-    <main className="min-h-screen bg-black text-[#f5f5f5] selection:bg-white selection:text-black flex flex-col items-center py-8 md:py-16 px-6 md:px-0">
+    <main className="min-h-screen bg-background text-foreground selection:bg-foreground selection:text-background flex flex-col items-center py-8 md:py-16 px-6 md:px-0">
       <div className="flex flex-col w-full max-w-3xl">
         <Hero />
         <Experience />

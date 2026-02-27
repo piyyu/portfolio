@@ -34,20 +34,20 @@ export default function ProjectsPage() {
   ];
 
   return (
-    <main className="min-h-screen bg-black text-[#f5f5f5] selection:bg-white selection:text-black flex flex-col items-center py-8 md:py-16 px-6 md:px-0">
+    <main className="min-h-screen bg-background text-foreground selection:bg-foreground selection:text-background flex flex-col items-center py-8 md:py-16 px-6 md:px-0">
       <div className="flex flex-col w-full max-w-3xl">
 
         <div className="mb-16 mt-8">
-          <Link href="/" className="inline-flex items-center gap-2 text-sm font-mono text-[#555555] hover:text-[#f5f5f5] transition-colors mb-8">
+          <Link href="/" className="inline-flex items-center gap-2 text-sm font-mono text-muted/50 hover:text-foreground transition-colors mb-8">
             <ArrowLeft className="w-4 h-4" />
             Back Home
           </Link>
 
-          <h1 className="text-3xl font-serif text-[#f5f5f5] mb-2 tracking-tight flex items-center gap-3">
-            <FolderGit2 className="w-6 h-6 text-[#555555]" />
+          <h1 className="text-3xl font-serif text-foreground mb-2 tracking-tight flex items-center gap-3">
+            <FolderGit2 className="w-6 h-6 text-muted/50" />
             All Projects
           </h1>
-          <p className="text-[#888888] font-sans">
+          <p className="text-muted font-sans">
             A comprehensive list of my open-source work and freelance builds.
           </p>
         </div>
@@ -56,19 +56,19 @@ export default function ProjectsPage() {
           {allProjects.map((project) => (
             <div key={project.name} className="flex flex-col gap-3 group">
               <div className="flex flex-col md:flex-row md:items-baseline md:justify-between gap-2">
-                <h3 className="text-2xl text-[#f5f5f5] font-serif">
+                <h3 className="text-2xl text-foreground font-serif">
                   {project.name}
                 </h3>
 
                 <div className="flex items-center gap-4 text-sm font-mono">
                   {project.github && (
-                    <a href={project.github} target="_blank" rel="noopener noreferrer" className="text-[#555555] hover:text-[#f5f5f5] transition-colors flex items-center gap-1.5">
+                    <a href={project.github} target="_blank" rel="noopener noreferrer" className="text-muted/50 hover:text-foreground transition-colors flex items-center gap-1.5">
                       <Github className="w-3.5 h-3.5" />
                       Code
                     </a>
                   )}
                   {project.link && (
-                    <a href={project.link} target="_blank" rel="noopener noreferrer" className="text-[#555555] hover:text-[#f5f5f5] transition-colors flex items-center gap-1.5">
+                    <a href={project.link} target="_blank" rel="noopener noreferrer" className="text-muted/50 hover:text-foreground transition-colors flex items-center gap-1.5">
                       <ExternalLink className="w-3.5 h-3.5" />
                       Live
                     </a>
@@ -76,11 +76,11 @@ export default function ProjectsPage() {
                 </div>
               </div>
 
-              <div className="text-xs font-mono text-[#555555]">
+              <div className="text-xs font-mono text-muted/50">
                 {project.tech}
               </div>
 
-              <p className="text-[#888888] text-base leading-relaxed mt-1 w-11/12 md:w-5/6">
+              <p className="text-muted text-base leading-relaxed mt-1 w-11/12 md:w-5/6">
                 {project.description}
               </p>
             </div>

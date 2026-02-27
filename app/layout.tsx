@@ -25,17 +25,27 @@ export const metadata: Metadata = {
   description: "Developer portfolio of Piyush Kumar. Full-stack engineering, systems thinking, and AI.",
 };
 
+import { ThemeProvider } from "@/components/theme-provider";
+import { ThemeToggle } from "@/components/theme-toggle";
+
 export default function RootLayout({
   children,
 }: Readonly<{
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={`dark ${poppins.variable} ${instrumentSerif.variable} ${jetbrainsMono.variable}`}>
-      <body
-        className="antialiased bg-black text-white"
-      >
-        {children}
+    <html
+      lang="en"
+      suppressHydrationWarning
+      className={`${poppins.variable} ${instrumentSerif.variable} ${jetbrainsMono.variable}`}
+    >
+      <body className="antialiased">
+        <ThemeProvider attribute="data-theme" defaultTheme="dark" enableSystem={false}>
+          {children}
+          <div className="fixed bottom-6 right-6 z-50">
+            <ThemeToggle />
+          </div>
+        </ThemeProvider>
       </body>
     </html>
   );

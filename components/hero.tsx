@@ -16,39 +16,39 @@ export function Hero() {
         {/* Text Body - Left Side */}
         <div className="flex flex-col gap-5">
           <div>
-            <h1 className="text-3xl font-serif text-[#f5f5f5] mb-2 tracking-tight flex items-center gap-2">
+            <h1 className="text-3xl font-serif text-foreground mb-2 tracking-tight flex items-center gap-2">
               Piyush Kumar
             </h1>
-            <p className="text-[#888888] font-sans text-lg">
+            <p className="text-muted font-sans text-lg">
               Full Stack Engineer
             </p>
           </div>
 
           {/* Minimal Social Links */}
-          <div className="flex gap-4 text-[#555555]">
-            <a href="https://github.com/piyyu" target="_blank" className="hover:text-[#f5f5f5] transition-colors">
+          <div className="flex gap-4 text-muted/50">
+            <a href="https://github.com/piyyu" target="_blank" className="hover:text-foreground transition-colors">
               <TbBrandGithub className="w-6 h-6" />
             </a>
-            <a href="https://x.com/heypiyyu" target="_blank" className="hover:text-[#f5f5f5] transition-colors">
+            <a href="https://x.com/heypiyyu" target="_blank" className="hover:text-foreground transition-colors">
               <TbBrandX className="w-6 h-6" />
             </a>
-            <a href="https://discordapp.com/users/heypiyyu" target="_blank" className="hover:text-[#f5f5f5] transition-colors">
+            <a href="https://discordapp.com/users/heypiyyu" target="_blank" className="hover:text-foreground transition-colors">
               <TbBrandDiscord className="w-6 h-6" />
             </a>
-            <a href="https://linkedin.com/in/piyush446" target="_blank" className="hover:text-[#f5f5f5] transition-colors">
+            <a href="https://linkedin.com/in/piyush446" target="_blank" className="hover:text-foreground transition-colors">
               <TbBrandLinkedin className="w-6 h-6" />
             </a>
-            <a href="mailto:piyushkr446@gmail.com" className="hover:text-[#f5f5f5] transition-colors">
+            <a href="mailto:piyushkr446@gmail.com" className="hover:text-foreground transition-colors">
               <TbMail className="w-6 h-6" />
             </a>
-            <a href="https://leetcode.com/piyyu" target="_blank" className="hover:text-[#f5f5f5] transition-colors">
+            <a href="https://leetcode.com/piyyu" target="_blank" className="hover:text-foreground transition-colors">
               <TbBrandLeetcode className="w-6 h-6" />
             </a>
           </div>
         </div>
 
         {/* Premium Editorial Avatar - Right Side */}
-        <div className="w-32 h-32 md:w-44 md:h-44 rounded-full overflow-hidden border border-[#333333] shadow-xl shrink-0">
+        <div className="w-32 h-32 md:w-44 md:h-44 rounded-full overflow-hidden border border-muted-dark shadow-xl shrink-0">
           <Image
             src="https://github.com/piyyu.png"
             alt="Piyush Kumar"
