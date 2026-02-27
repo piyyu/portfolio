@@ -13,7 +13,7 @@ export function Experience() {
   return (
     <section className="py-8 border-t border-[#1a1a1a]">
       <h2 className="text-sm font-mono text-[#888888] mb-6 uppercase tracking-[0.2em] flex items-center gap-2">
-        <Briefcase className="w-4 h-4" />
+        <Briefcase className="w-5 h-5" />
         Experience
       </h2>
 
@@ -25,13 +25,13 @@ export function Experience() {
                 {exp.role}
               </h3>
               <div className="text-sm font-mono text-[#555555] flex items-center gap-1.5 md:mt-0">
-                <Calendar className="w-3.5 h-3.5" />
+                <Calendar className="w-5 h-5" />
                 {exp.dates}
               </div>
             </div>
 
             <div className="text-sm text-[#888888] font-mono flex items-center gap-1.5">
-              <Building2 className="w-3.5 h-3.5" />
+              <Building2 className="w-5 h-5" />
               {exp.company}
             </div>
 

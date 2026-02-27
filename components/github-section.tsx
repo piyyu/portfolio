@@ -19,19 +19,18 @@ export function GithubSection() {
         GitHub Activity
       </h2>
 
-      <div className="w-full flex justify-center opacity-80 hover:opacity-100 transition-opacity duration-300 min-h-[150px]">
-        {mounted && (
-          <GitHubCalendar
-            username="piyyu"
-            colorScheme="dark"
-            theme={{
-              dark: ['#1a1a1a', '#333333', '#555555', '#888888', '#ededed'],
-            }}
-            blockSize={10}
-            blockMargin={4}
-            fontSize={10}
-          />
-        )}
+      <div className="w-full flex justify-center opacity-80 hover:opacity-100 transition-opacity duration-300 min-h-[150px] mt-4 overflow-x-auto">
+        <div className="w-full max-w-[800px] flex justify-center [&_article]:w-full [&_article]:max-w-full [&_svg]:w-full [&_svg]:max-w-full [&_svg]:h-auto">
+          {mounted && (
+            <GitHubCalendar
+              username="piyyu"
+              colorScheme="dark"
+              theme={{
+                dark: ['#1a1a1a', '#333333', '#555555', '#888888', '#ededed'],
+              }}
+            />
+          )}
+        </div>
       </div>
     </section>
   );
