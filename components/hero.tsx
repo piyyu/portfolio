@@ -7,6 +7,7 @@ import {
   TbMail
 } from "react-icons/tb";
 import Image from "next/image";
+import { SocialLink } from "@/components/social-link";
 
 export function Hero() {
   return (
@@ -26,24 +27,41 @@ export function Hero() {
 
           {/* Minimal Social Links */}
           <div className="flex gap-4 text-muted/50">
-            <a href="https://github.com/piyyu" target="_blank" className="hover:text-foreground transition-colors">
-              <TbBrandGithub className="w-6 h-6" />
-            </a>
-            <a href="https://x.com/heypiyyu" target="_blank" className="hover:text-foreground transition-colors">
-              <TbBrandX className="w-6 h-6" />
-            </a>
-            <a href="https://discordapp.com/users/heypiyyu" target="_blank" className="hover:text-foreground transition-colors">
-              <TbBrandDiscord className="w-6 h-6" />
-            </a>
-            <a href="https://linkedin.com/in/piyush446" target="_blank" className="hover:text-foreground transition-colors">
-              <TbBrandLinkedin className="w-6 h-6" />
-            </a>
-            <a href="mailto:piyushkr446@gmail.com" className="hover:text-foreground transition-colors">
-              <TbMail className="w-6 h-6" />
-            </a>
-            <a href="https://leetcode.com/piyyu" target="_blank" className="hover:text-foreground transition-colors">
-              <TbBrandLeetcode className="w-6 h-6" />
-            </a>
+            <SocialLink
+              href="https://github.com/piyyu"
+              target="_blank"
+              platform="github"
+              icon={<TbBrandGithub className="w-6 h-6" />}
+            />
+            <SocialLink
+              href="https://x.com/heypiyyu"
+              target="_blank"
+              platform="twitter"
+              icon={<TbBrandX className="w-6 h-6" />}
+            />
+            <SocialLink
+              href="https://discordapp.com/users/heypiyyu"
+              target="_blank"
+              platform="discord"
+              icon={<TbBrandDiscord className="w-6 h-6" />}
+            />
+            <SocialLink
+              href="https://linkedin.com/in/piyush446"
+              target="_blank"
+              platform="linkedin"
+              icon={<TbBrandLinkedin className="w-6 h-6" />}
+            />
+            <SocialLink
+              href="mailto:piyushkr446@gmail.com"
+              platform="email"
+              icon={<TbMail className="w-6 h-6" />}
+            />
+            <SocialLink
+              href="https://leetcode.com/piyyu"
+              target="_blank"
+              platform="leetcode"
+              icon={<TbBrandLeetcode className="w-6 h-6" />}
+            />
           </div>
         </div>
 
