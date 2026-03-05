@@ -4,19 +4,19 @@ import { ArrowRight, FolderGit2, Github, ExternalLink } from "lucide-react";
 export function Projects() {
   const projects = [
     {
+      name: "Brainbucket",
+      description: "AI-powered second brain for effortlessly saving, searching, and chatting with your digital content.",
+      tech: "React • Node.js • MongoDB • Voyage AI",
+      github: "https://github.com/piyyu/brainbucket",
+      link: "https://brainbucket-zeta.vercel.app/"
+    },
+    {
       name: "Gitnest",
       description: "Advanced AI tutoring assistant that generates structured, on-demand tutorials for any GitHub repository.",
       tech: "Next.js • TypeScript • Tailwind • Groq AI",
       github: "https://github.com/piyyu/gitnest",
       link: "https://gitnest-cyan.vercel.app/"
     },
-    {
-      name: "Brainbucket",
-      description: "AI-powered second brain for effortlessly saving, searching, and chatting with your digital content.",
-      tech: "React • Node.js • MongoDB • Voyage AI",
-      github: "https://github.com/piyyu/brainbucket",
-      link: "https://brainbucket-zeta.vercel.app/"
-    }
   ];
 
   return (

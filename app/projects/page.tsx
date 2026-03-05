@@ -18,6 +18,13 @@ export default function ProjectsPage() {
       link: "https://gitnest-cyan.vercel.app/"
     },
     {
+      name: "Echo Studio",
+      description: "Real-time synchronized music listening platform where multiple users experience audio playback in perfect sync using an event-driven SSE push architecture.",
+      tech: "Next.js • TypeScript • Zustand • SSE • Tailwind CSS",
+      github: "https://github.com/piyyu/echo",
+      link: "https://echo-rsi1.vercel.app/"
+    },
+    {
       name: "ApiCraft",
       description: "High-performance concurrent API testing tool written in Go, providing a terminal UI for rapid developer feedback.",
       tech: "Go • Bubbletea • TUI",

@@ -16,7 +16,7 @@ export function Hero() {
         {/* Text Body - Left Side */}
         <div className="flex flex-col gap-5">
           <div>
-            <h1 className="text-3xl font-serif text-foreground mb-2 tracking-tight flex items-center gap-2">
+            <h1 className="text-5xl font-serif text-foreground mb-2 tracking-tight flex items-center gap-2">
               Piyush Kumar
             </h1>
             <p className="text-muted font-sans text-lg">
