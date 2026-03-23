@@ -104,9 +104,12 @@ function SocialAvatar({
   bg: string;
   label: string;
 }) {
-  const [failed, setFailed] = useState(!src);
+  const [failedSrc, setFailedSrc] = useState(false);
+  const [failedFallback, setFailedFallback] = useState(false);
 
-  if (failed || !src) {
+  const currentSrc = !failedSrc && src ? src : !failedFallback ? "https://github.com/piyyu.png" : null;
+
+  if (!currentSrc) {
     return (
       <div
         className="w-14 h-14 rounded-full flex items-center justify-center text-white font-bold text-sm select-none"
@@ -120,12 +123,18 @@ function SocialAvatar({
   return (
     // eslint-disable-next-line @next/next/no-img-element
     <img
-      src={src}
+      src={currentSrc}
       alt={alt}
       width={56}
       height={56}
       className="w-14 h-14 rounded-full object-cover block"
-      onError={() => setFailed(true)}
+      onError={() => {
+        if (!failedSrc && src) {
+          setFailedSrc(true);
+        } else {
+          setFailedFallback(true);
+        }
+      }}
     />
   );
 }
@@ -174,7 +183,7 @@ function ProfileCard({
   banner, avatarEl, name, handle, bio, stats, extra, href, badge, badgeColor,
 }: ProfileCardProps) {
   return (
-    <div className="w-72 rounded-xl overflow-hidden">
+    <div className="w-72 rounded-2xl overflow-hidden">
       {/* Banner */}
       <div className="relative h-20" style={{ background: banner }}>
         {/* View button */}
@@ -414,8 +423,8 @@ export function SocialLink({
         onMouseLeave={hide}
         className={[
           "absolute left-1/2 -translate-x-1/2 z-50",
-          "bg-background border border-border rounded-xl shadow-2xl",
-          "transition-all duration-200",
+          "bg-background/80 backdrop-blur-2xl border border-border/50 rounded-2xl shadow-[0_8px_30px_rgb(0,0,0,0.12)] ring-1 ring-white/5",
+          "transition-all duration-300 ease-out",
           side === "above" ? "bottom-full mb-3 origin-bottom" : "top-full mt-3 origin-top",
           visible
             ? "opacity-100 translate-y-0 scale-100 pointer-events-auto"
