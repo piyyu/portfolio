@@ -3,10 +3,10 @@ import { Briefcase, Calendar, Building2 } from "lucide-react";
 export function Experience() {
   const experiences = [
     {
-      role: "Freelance Full Stack Engineer",
+      role: "Freelance Backend & AI Engineer",
       company: "Independent",
       dates: "2023 - Present",
-      description: "Building premium Web3 interfaces, AI-powered internal tools, and high-performance backends for early-stage startups."
+      description: "Building AI-integrated products, semantic search pipelines, and high-performance backends for early-stage startups."
     }
   ];
 

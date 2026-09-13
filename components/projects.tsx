@@ -17,6 +17,13 @@ export function Projects() {
       github: "https://github.com/piyyu/gitnest",
       link: "https://gitnest-cyan.vercel.app/"
     },
+    {
+      name: "Loop",
+      description: "Real-time synchronized music listening platform where multiple users experience audio playback in perfect sync using an event-driven SSE push architecture, with Spotify playlist imports and offline PWA playback.",
+      tech: "Next.js • TypeScript • Prisma • Postgres • Zustand • SSE • Tailwind CSS",
+      github: "https://github.com/piyyu/loop",
+      link: "https://loop-seven-pearl.vercel.app/"
+    },
   ];
 
   return (

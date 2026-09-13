@@ -32,11 +32,4 @@ export const projects: ProjectItem[] = [
     liveUrl: "https://mark-it-mi76.vercel.app",
     accent: "#f97316",
   },
-  {
-    name: "ApiCraft",
-    summary: "Concurrent API testing utility built for speed, reliability, and developer-friendly feedback loops.",
-    stack: "Go • CLI • Concurrency",
-    repoUrl: "https://github.com/piyyu/apicraft",
-    accent: "#22c55e",
-  },
 ];

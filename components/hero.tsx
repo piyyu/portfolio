@@ -21,7 +21,7 @@ export function Hero() {
               Piyush Kumar
             </h1>
             <p className="text-muted font-sans text-lg">
-              Full Stack Engineer
+              Backend & AI Engineer
             </p>
           </div>
 

@@ -22,7 +22,7 @@ const jetbrainsMono = JetBrains_Mono({
 
 export const metadata: Metadata = {
   title: "Piyush Kumar",
-  description: "Developer portfolio of Piyush Kumar. Full-stack engineering, systems thinking, and AI.",
+  description: "Developer portfolio of Piyush Kumar. Backend & AI engineering, systems thinking, and high-performance backends.",
 };
 
 import { ThemeProvider } from "@/components/theme-provider";

@@ -25,13 +25,6 @@ export default function ProjectsPage() {
       link: "https://loop-seven-pearl.vercel.app/"
     },
     {
-      name: "ApiCraft",
-      description: "High-performance concurrent API testing tool written in Go, providing a terminal UI for rapid developer feedback.",
-      tech: "Go • Bubbletea • TUI",
-      github: "https://github.com/piyyu/apicraft",
-      link: null
-    },
-    {
       name: "Mark-it",
       description: "Minimal, private space to save, organize, and rediscover your most important web links.",
       tech: "Next.js • TailwindCSS",

@@ -71,7 +71,7 @@ const PROFILES: Record<Exclude<Platform, "github" | "leetcode">, StaticProfile> 
     // no public avatar API — placeholder
     avatarBg: "linear-gradient(135deg, #004182, #0A66C2)",
     avatarLabel: "in",
-    bio: "Full Stack Engineer · Open to work.",
+    bio: "Backend & AI Engineer · Open to work.",
     badge: "LinkedIn",
     badgeColor: "#0A66C2",
     banner: "linear-gradient(135deg, #001428 0%, #003d7a 40%, #0ea5e9 100%)",
@@ -300,8 +300,25 @@ function LeetCodeCard() {
 
   if (error)
     return (
-      <div className="w-72 p-6 text-xs text-muted text-center">
-        Could not load LeetCode data.
+      <div className="w-72 rounded-2xl overflow-hidden">
+        <div
+          className="relative h-20"
+          style={{ background: "linear-gradient(135deg, #1a0800 0%, #7a2e00 40%, #ff6a00 100%)" }}
+        >
+          <a
+            href="https://leetcode.com/piyyu"
+            target="_blank"
+            rel="noopener noreferrer"
+            onClick={(e) => e.stopPropagation()}
+            className="absolute top-3 right-3 text-[11px] font-semibold px-3 py-1 rounded-full
+                       bg-black/30 hover:bg-black/50 text-white backdrop-blur-sm transition-colors z-10"
+          >
+            View
+          </a>
+        </div>
+        <div className="p-6 text-xs text-muted text-center">
+          Could not load LeetCode data.
+        </div>
       </div>
     );
 
